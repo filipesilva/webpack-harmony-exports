@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.jit.json",
+  "compilerOptions": {
+    "outDir": "out-aot"
+  },
+  "files": [
+    "src/app.module.ts",
+    "src/main.aot.ts"
+  ],
+  "angularCompilerOptions": {
+    "genDir": "./out-aot/",
+    "entryModule": "app/app.module#AppModule"
+  }
+}
